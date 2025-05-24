@@ -27,7 +27,7 @@
     border-radius: 10px;
     text-align: center;
 }
-.navButton: :hover{
+.navButton :hover{
     opacity: 5%;
 }
 
