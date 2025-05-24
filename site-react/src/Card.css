@@ -1,0 +1,34 @@
+/* src/Card.css */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    width: 300px;
+    overflow: hidden;
+    display: inline-block; /* To display cards side-by-side */
+    vertical-align: top; /* Align to top when side-by-side */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
