@@ -1,6 +1,6 @@
 .navBar{
-    background-color: rgb(80, 144, 44);
-    position:fixed;
+    background-color: #0c0e19;
+    position:sticky;
     width: 100%;
     height:10vh;
     max-height: 70px;
@@ -8,43 +8,75 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+    justify-content: space-around;
+    padding: 0px;
+    /*border-radius: 0px 0px 15px 15px;*/
 }
 
+
+
 .navButton{
-    background-color: rgb(26, 5, 131);
+    user-select: none;
+
+    background-color:transparent;
     position: relative;
-    height: 80%;
+    height: 100%;
     width:fit-content;
     color: white;
     left: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     text-align: center;
-}
-.navButton :hover{
-    opacity: 5%;
+    border:none;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-width: 8%;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
+
+
+.navButton:hover{
+   background-color: #5f4f42;
+   
+}
+
+
 .buttonContainer{
-    height: 90%;
-    top:5%;
+    height: 100%;
     width:fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
+    min-width:65%;
     margin-left: 5px;
     padding-right:5px ;
 }
 
 .navLogo{
+user-select: none;
 top:5%;
 height: 90%;
 
 
+}
+
+.background{
+    background-color: #E4DCCF;
+    position:relative;
+    width: 100vw;
+    content:cover;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("C:\Users\willi\OneDrive\Documents\Homeless_Helper\website\src\Assets\back2.png");
 }
