@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #5a51bf;
+  background-color: #000000;
   scrollbar-width: none; /* 'auto' (default), 'thin', or 'none' */
                         /* 'thin' often looks cleaner */
   scrollbar-color: grey transparent; /* thumb color, track color */
@@ -26,11 +26,7 @@ overflow: overlay; /* Allows content to overflow without scrollbars */
 
 
 .content {
-  width: 100%; /* This will be 100% of the available content area */
-  padding: 20px;
-  box-sizing: border-box; /* Important for padding not adding to width */
-  min-height: 200vh;
-  background-color: url("C:\Users\willi\OneDrive\Documents\Homeless_Helper\website\src\Assets\back2.png"); /* Your content's background */
+
 }
 
 /* --- Your custom scrollbar styling (transparent track, visible thumb) --- */
@@ -39,7 +35,7 @@ overflow: overlay; /* Allows content to overflow without scrollbars */
   width: 0px;
   height: 0px;
   background-color: transparent; /* Makes the scrollbar area transparent */
-}
+} 
 
 ::-webkit-scrollbar-track {
   background-color: transparent; /* Makes the track invisible */

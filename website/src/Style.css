@@ -1,6 +1,6 @@
 .navBar{
-    background-color: #0c0e19;
-    position:sticky;
+    background-color: rgb(80, 144, 44);
+    position:relative;
     width: 100%;
     height:10vh;
     max-height: 70px;
@@ -8,75 +8,79 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 0px;
-    /*border-radius: 0px 0px 15px 15px;*/
+    justify-content: space-between;
+    padding: 5px;
 }
 
-
-
 .navButton{
-    user-select: none;
-
-    background-color:transparent;
+    background-color: rgb(26, 5, 131);
     position: relative;
-    height: 100%;
+    height: 80%;
     width:fit-content;
     color: white;
     left: auto;
-    margin-left: 2px;
-    margin-right: 2px;
-    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     text-align: center;
-    border:none;
-    padding-left: 2%;
-    padding-right: 2%;
-    min-width: 8%;
-    white-space: nowrap;
-    text-decoration: none;
 }
-
-
-
-.navButton:hover{
-   background-color: #5f4f42;
-   
+.navButton :hover{
+    opacity: 5%;
 }
-
 
 .buttonContainer{
-    height: 100%;
+    height: 90%;
+    top:5%;
     width:fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
-    min-width:65%;
     margin-left: 5px;
     padding-right:5px ;
 }
 
 .navLogo{
-user-select: none;
 top:5%;
 height: 90%;
 
 
 }
-
-.background{
-    background-color: #E4DCCF;
-    position:relative;
-    width: 100vw;
-    content:cover;
-    height: 300vh;
-    display: flex;
+.shower {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    border-radius: 0 0 15% 15%;
+    padding: 10px; /* border thickness */
+    background-color: red; /* solid background */
+    color: white;
+    
+    display: block;
+  }
+  
+  .shower::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 15% 15%;
+    transform: translate(0, 5px);
+    background-image: -webkit-radial-gradient(white, black);
+    z-index: -1; /* behind the main element */
+  }
+  
+ 
+  
+.mainContain{
+    
+    width:100%;
+    height:100%;
+    display:flex;
     flex-direction: column;
+    position: fixed;
     align-items: center;
-    justify-content: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-image: url("C:\Users\willi\OneDrive\Documents\Homeless_Helper\website\src\Assets\back2.png");
 }
