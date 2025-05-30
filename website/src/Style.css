@@ -82,10 +82,11 @@ height: 90%;
     display:flex;
     background-color: red;
     width:90%;
-    height: 90%;
+    height: 90%;/*
     align-items: center;
     justify-content: center;
-}
+*/
+    }
 
 
 
@@ -112,4 +113,8 @@ height: 90%;
     flex-direction: column;
     position: fixed;
     align-items: center;
+}
+
+.imgWheel{
+  position:relative;
 }

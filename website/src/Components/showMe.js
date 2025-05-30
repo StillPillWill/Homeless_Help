@@ -20,10 +20,10 @@ import React,{useState} from "react"
 
 
         var img=document.querySelectorAll(".imgWheel")[0]
-        img.style.rotate="y "+ mouseX/4+"deg"
-
-
-    }
+        img.style.rotate="y "+ mouseX/4+"deg";
+        img.style.left=(mouseX/document.documentElement.clientWidth)*100-50+"%";
+         
+}
     document.addEventListener('mousemove', updateMousePosition);
 
 
@@ -58,3 +58,12 @@ function ShowContent(){
     return(content);
 }
 
+function getRelativePos(element){
+    if (!element || !element.parentElement) return { x: 0, y: 0 };
+    const parentRect = element.parentElement.getBoundingClientRect();
+    const elemRect = element.getBoundingClientRect();
+    return {
+        x: elemRect.left - parentRect.left,
+        y: elemRect.top - parentRect.top
+    };
+}
