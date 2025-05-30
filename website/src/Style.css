@@ -78,14 +78,14 @@ height: 90%;
   }
 
   .img-container{
+    overflow: hidden;
     position: relative;
     display:flex;
     background-color: red;
     width:90%;
-    height: 90%;/*
+    height: 90%;
     align-items: center;
-    justify-content: center;
-*/
+
     }
 
 
@@ -115,6 +115,35 @@ height: 90%;
     align-items: center;
 }
 
-.imgWheel{
+@keyframes slide{
+
+  0%{transform:rotateY(60deg); height:75%; left:-20%;display:block;}
+  25%{transform:rotateY(30deg); height:90%;}
+  50%{transform:rotateY(0deg); height:100%; left:57.5;}
+  75%{transform:rotateY(-30deg); height:90%;}
+  100%{transform:rotateY(-60deg); left:80%; height:75%; display:none;}
+
+}
+@keyframes slide2{
+
+0%{rotate:Y(0deg);}
+50%{rotate:Y(90deg);}
+100%{rotate:Y(0deg);}
+}
+
+
+.imgWheel{ 
   position:relative;
+  top:0;
+  user-select: none;
+  transition: none;
+  transform:rotateY(89deg)transform;  
+
+}
+
+.pause{
+  animation-play-state: paused;
+}
+.play{
+  animation-play-state: running;
 }
